@@ -9,21 +9,21 @@ import UIKit
 
 class CreateaYahooaccount: UIViewController {
 
+    @IBOutlet weak var myEmailButton: UIButton!
+    @IBOutlet weak var googleButton: UIButton!
+    @IBOutlet weak var nextButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        Button()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func Button(){
+        nextButton.layer.cornerRadius = 10
+        googleButton.layer.cornerRadius = 10
+        myEmailButton.layer.cornerRadius = 10
+        
     }
-    */
+  
 
 }

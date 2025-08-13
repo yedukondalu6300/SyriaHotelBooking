@@ -4,26 +4,27 @@
 //
 //  Created by Yarramsetti Yedukondalu on 06/08/25.
 //
-
+//careers@syriabooking.sy
 import UIKit
 
 class CareersVC: UIViewController {
-
+    @IBOutlet weak var mailButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+       
     }
     
+    @IBAction func mailButtonAction(_ sender: Any) {
+        let popupVC = MailProviderSelectionVC()
+        popupVC.modalPresentationStyle = .overFullScreen
+        popupVC.modalTransitionStyle = .crossDissolve
+        present(popupVC, animated: true, completion: nil)
 
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
     }
-    */
+    
+  
 
 }

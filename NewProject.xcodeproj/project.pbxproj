@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		83B2B9A42E49D85E00730201 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 83B2B9A32E49D85E00730201 /* GoogleSignIn */; };
+		83B2B9A92E49DD7C00730201 /* MSAL in Frameworks */ = {isa = PBXBuildFile; productRef = 83B2B9A82E49DD7C00730201 /* MSAL */; };
+		83B2B9AC2E4A04F900730201 /* BitCollections in Frameworks */ = {isa = PBXBuildFile; productRef = 83B2B9AB2E4A04F900730201 /* BitCollections */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		83989FE12E420A27006C740C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -65,6 +71,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83B2B9A42E49D85E00730201 /* GoogleSignIn in Frameworks */,
+				83B2B9A92E49DD7C00730201 /* MSAL in Frameworks */,
+				83B2B9AC2E4A04F900730201 /* BitCollections in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,6 +134,9 @@
 			);
 			name = NewProject;
 			packageProductDependencies = (
+				83B2B9A32E49D85E00730201 /* GoogleSignIn */,
+				83B2B9A82E49DD7C00730201 /* MSAL */,
+				83B2B9AB2E4A04F900730201 /* BitCollections */,
 			);
 			productName = NewProject;
 			productReference = 83989FCA2E420A23006C740C /* NewProject.app */;
@@ -208,6 +220,11 @@
 			);
 			mainGroup = 83989FC12E420A23006C740C;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				83B2B9A22E49D85E00730201 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+				83B2B9A72E49DD7C00730201 /* XCRemoteSwiftPackageReference "microsoft-authentication-library-for-objc" */,
+				83B2B9AA2E4A04C500730201 /* XCRemoteSwiftPackageReference "swift-collections" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 83989FCB2E420A23006C740C /* Products */;
 			projectDirPath = "";
@@ -571,6 +588,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		83B2B9A22E49D85E00730201 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+		83B2B9A72E49DD7C00730201 /* XCRemoteSwiftPackageReference "microsoft-authentication-library-for-objc" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AzureAD/microsoft-authentication-library-for-objc";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.3.0;
+			};
+		};
+		83B2B9AA2E4A04C500730201 /* XCRemoteSwiftPackageReference "swift-collections" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-collections.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		83B2B9A32E49D85E00730201 /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 83B2B9A22E49D85E00730201 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+		83B2B9A82E49DD7C00730201 /* MSAL */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 83B2B9A72E49DD7C00730201 /* XCRemoteSwiftPackageReference "microsoft-authentication-library-for-objc" */;
+			productName = MSAL;
+		};
+		83B2B9AB2E4A04F900730201 /* BitCollections */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 83B2B9AA2E4A04C500730201 /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = BitCollections;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 83989FC22E420A23006C740C /* Project object */;
 }
