@@ -21,7 +21,7 @@ class AboutUsVC: UIViewController {
 
         // StackView inside ScrollView
         let stackView = UIStackView()
-        stackView.axis = .vertical
+        stackView.axis = .horizontal
         stackView.spacing = 16
         stackView.alignment = .leading
         stackView.translatesAutoresizingMaskIntoConstraints = false
