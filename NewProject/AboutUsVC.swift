@@ -12,7 +12,7 @@ class AboutUsVC: UIViewController {
 
     private func setupUI() {
         title = "About Us"
-        view.backgroundColor = .black
+        view.backgroundColor = .yellow
 
         // ScrollView
         let scrollView = UIScrollView()
